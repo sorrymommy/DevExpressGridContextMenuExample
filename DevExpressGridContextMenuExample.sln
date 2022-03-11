@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEFramework.GridViewContextMenu.Base", "MEFramework.GridViewContextMenu.Base\MEFramework.GridViewContextMenu.Base.csproj", "{27C0984B-4B64-42D9-BF90-76AC28FB0671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEFramework.GridViewExport.Base", "MEFramework.GridViewExport.Base\MEFramework.GridViewExport.Base.csproj", "{DA63B97B-0F39-4B50-8D38-6DA2458C352E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEFramework.GridViewPrint.Base", "MEFramework.GridViewPrint.Base\MEFramework.GridViewPrint.Base.csproj", "{765021BB-52C4-4496-8B5C-F016110B3342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEFramework.GridViewContextMenu", "MEFramework.GridViewContextMenu\MEFramework.GridViewContextMenu.csproj", "{0CEF4B12-4CE2-429D-A1C9-2C04D32D225B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormTest", "WinformTest\WinFormTest.csproj", "{FDEE8C04-5D9F-45D2-926A-49E26F87F134}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27C0984B-4B64-42D9-BF90-76AC28FB0671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C0984B-4B64-42D9-BF90-76AC28FB0671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C0984B-4B64-42D9-BF90-76AC28FB0671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C0984B-4B64-42D9-BF90-76AC28FB0671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA63B97B-0F39-4B50-8D38-6DA2458C352E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA63B97B-0F39-4B50-8D38-6DA2458C352E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA63B97B-0F39-4B50-8D38-6DA2458C352E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA63B97B-0F39-4B50-8D38-6DA2458C352E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{765021BB-52C4-4496-8B5C-F016110B3342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{765021BB-52C4-4496-8B5C-F016110B3342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{765021BB-52C4-4496-8B5C-F016110B3342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{765021BB-52C4-4496-8B5C-F016110B3342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CEF4B12-4CE2-429D-A1C9-2C04D32D225B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CEF4B12-4CE2-429D-A1C9-2C04D32D225B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CEF4B12-4CE2-429D-A1C9-2C04D32D225B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CEF4B12-4CE2-429D-A1C9-2C04D32D225B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEE8C04-5D9F-45D2-926A-49E26F87F134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEE8C04-5D9F-45D2-926A-49E26F87F134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEE8C04-5D9F-45D2-926A-49E26F87F134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEE8C04-5D9F-45D2-926A-49E26F87F134}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26B33FA9-38AE-4BD5-82A1-2A3253536937}
+	EndGlobalSection
+EndGlobal

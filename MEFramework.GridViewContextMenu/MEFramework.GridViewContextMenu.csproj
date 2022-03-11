@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0CEF4B12-4CE2-429D-A1C9-2C04D32D225B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MEFramework.GridViewContextMenu</RootNamespace>
+    <AssemblyName>MEFramework.GridViewContextMenu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Creators\ContextMenuItemCreatorColumnVisible.cs" />
+    <Compile Include="Creators\ContextMenuItemCreatorGridViewExport.cs" />
+    <Compile Include="Creators\ContextMenuItemCreatorGridViewInit.cs" />
+    <Compile Include="Creators\ContextMenuItemCreatorGridViewPrint.cs" />
+    <Compile Include="DXMenuItems\DXMenuItemColumnVisible.cs" />
+    <Compile Include="DXMenuItems\DXMenuItemGridViewExport.cs" />
+    <Compile Include="DXMenuItems\DXMenuItemGridViewInit.cs" />
+    <Compile Include="DXMenuItems\DXMenuItemGridViewPrint.cs" />
+    <Compile Include="GridViewContextMenuViewerColumnHeader.cs" />
+    <Compile Include="GridViewContextMenuViewerDataRow.cs" />
+    <Compile Include="GridViewExportType.cs" />
+    <Compile Include="GridViewExport\GridViewBasicExportHandler.cs" />
+    <Compile Include="GridViewPrint\GridViewPrint.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MEFramework.GridViewContextMenu.Base\MEFramework.GridViewContextMenu.Base.csproj">
+      <Project>{27c0984b-4b64-42d9-bf90-76ac28fb0671}</Project>
+      <Name>MEFramework.GridViewContextMenu.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MEFramework.GridViewExport.Base\MEFramework.GridViewExport.Base.csproj">
+      <Project>{da63b97b-0f39-4b50-8d38-6da2458c352e}</Project>
+      <Name>MEFramework.GridViewExport.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MEFramework.GridViewPrint.Base\MEFramework.GridViewPrint.Base.csproj">
+      <Project>{765021bb-52c4-4496-8b5c-f016110b3342}</Project>
+      <Name>MEFramework.GridViewPrint.Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
